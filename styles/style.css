@@ -60,3 +60,101 @@ header{
     font-weight: 400;
 }
 
+/* banner section style */
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 120px;
+    
+}
+
+.banner-info{
+    margin-top: 45px;
+}
+
+.colorful-text{
+    color: rgba(233, 90, 8, 1);
+}
+.banner-title{
+    margin-bottom: 0px;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-title-2{
+ margin-top: 0px;
+ margin-bottom: 5px;
+ font-size: 4rem;
+ font-weight: 700;
+}
+
+.banner-description{
+    font-size: 1.37rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 11px;
+    
+}
+
+.banner-image img{
+    display: block;
+}
+
+
+/* responsive layout style */
+@media screen and (max-width: 576px) {
+     /* nav responsive */
+    .mobile-loop{
+        display: none;
+    }
+    .menu-item a{
+    font-size: 1rem;
+    font-weight: 400;
+    }
+    .brand{
+       width: 63px;
+       height: 38px;
+    }
+
+    .navigation-container{
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    /* banner responsive */
+    .banner-container{
+        flex-direction: column-reverse;
+        
+    }
+    .banner-info{
+        margin-left: 16px;
+        margin-right: 17px;
+        margin-top: 28px;
+
+    }
+    .banner-image img{
+        width: 103%;
+        
+    }
+
+    .banner-title{
+      margin-bottom: 0px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .banner-title-2{
+      margin-top: 0px;
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .banner-description{
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 11px;
+    
+}
+}
+
