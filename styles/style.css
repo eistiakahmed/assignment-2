@@ -165,6 +165,47 @@ header, main{
     margin-top: 20px;
 }
 
+.plants-btn a{
+    text-decoration: none;
+    color: white;
+}
+/* Flower & Plants Lover */
+.flower-lover-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 120px;
+
+}
+
+.flower-image{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    left: 355px;
+    top: -128px;
+   
+}
+
+.badge{
+    width: 286px;
+    height: 286px;
+}
+.flower-lover-title{
+    font-size: 3.12rem;
+    font-weight: 700;
+}
+
+.flower-lover-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.37rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
 /* responsive layout style */
 @media screen and (max-width: 576px) {
      /* nav responsive */
@@ -221,6 +262,9 @@ header, main{
      margin-top: 11px;
     }
     /* plants responsive*/
+    .our-plants-info{
+        margin-top: 60px;
+    }
     .our-plants-title{
      font-size: 1.5rem;
      font-weight: 700;
@@ -275,6 +319,24 @@ header, main{
    }
     .plants-card-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .flower-lover-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .badge{
+        display: none;
+    }
+    .store{
+        width: 100%;
+    }
+    .flower-lover-title{
+        font-size: 1.5rem;
+        margin-top: 0px;
+    }
+    .flower-lover-description{
+        font-size: 0.87rem;
     }
 }
 
