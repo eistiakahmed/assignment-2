@@ -28,6 +28,28 @@ body{
   margin: 0px;
 }
 
+/* animation section */
+.spinner {
+  width: 50px;
+  height: 50px;
+  /* border: 5px solid #f3f3f3; */
+  /* border-top: 5px solid #3498db; */
+  border-radius: 50%;
+  animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 /* Navigation sections style  */
 
 .navigation-container{
@@ -279,41 +301,41 @@ body{
   height: 420px;
 }
 
-  .text {
+.text {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
-  .text-2 {
+.text-2 {
   text-align: center;
   color: rgb(255, 255, 255);
-  font-size: 40px;
+  font-size: 2.5px;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .title{
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-  .title-2{
-    margin-bottom: 8px;
+.title-2{
+  margin-bottom: 8px;
     
-  }
+}
   
-  .text a {
+.text a{
   color: rgb(255, 255, 255);
   padding: 6px 14px;
   font-size: 1rem;
   font-weight: 600;
   
 }
- .text-2 a {
+.text-2 a{
   color: rgb(255, 255, 255);
   padding: 6px 14px;
-  font-size: 22px;
+  font-size: 1.37rem;
   font-weight: 600;
 }
 /* Join the colorful bunch section style */
@@ -336,7 +358,7 @@ body{
 }
 
 .join-content h2 {
-  font-size: 50px;
+  font-size: 3.12rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -425,40 +447,48 @@ body{
 
 /* responsive layout style */
 @media screen and (max-width: 576px) {
+
+    /* common responsive */
+    main .plants-card-container,
+    .our-plants-info, 
+    .flower-lover-container,
+    .deals-section,
+    .deals-container{
+      margin: 15px;
+    }
      /* nav responsive */
     .mobile-loop{
-        display: none;
+      display: none;
     }
     .menu-item a{
     font-size: 1rem;
     font-weight: 400;
     }
     .brand{
-       width: 63px;
-       height: 38px;
+      width: 63px;
+      height: 38px;
     }
 
     .navigation-container{
-        align-items: center;
-        padding-left: 16px;
-        padding-right: 16px;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
     }
 
     /* banner responsive */
     .banner-container{
-        flex-direction: column-reverse !important;
+      flex-direction: column-reverse;
         
     }
     .banner-info{
-        margin-left: 16px;
-        margin-right: 17px;
-        margin-top: 28px;
+      margin-left: 16px;
+      margin-right: 17px;
+      margin-top: 28px;
 
     }
     .banner-image img{
-       width: 100%;
+      width: 100%;
 
-        
     }
 
     .banner-title{
@@ -535,53 +565,54 @@ body{
      margin-top: 20px;
    }
     .plants-card-container{
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Flower and Plants Lover */
+    /* Flower and Plants Lover responsive */
     .flower-lover-container{
-        flex-direction: column;
-        gap: 20px;
+      flex-direction: column;
+      gap: 20px;
     }
 
     .badge{
-        display: none;
+      display: none;
     }
     .store{
-        width: 100%;
+      width: 100%;
     }
     .flower-lover-title{
-        font-size: 1.5rem;
-        margin-top: 0px;
+      font-size: 1.5rem;
+      margin-top: 0px;
     }
     .flower-lover-description{
-        font-size: 0.87rem;
+      font-size: 0.87rem;
     }
 
     /* Latest  Deals section responsive */
     .deals-title{
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
     .deals-description{
-        font-size: 0.87rem;
+      font-size: 0.87rem;
     }
 
     .deals-container{
-        flex-direction: column !important;
+      flex-direction: column !important;
     }
     .left-deals{
-        flex-direction: column ;
-        width: 100%;
+      flex-direction: column ;
+      width: 100%;
     }
     .big-banner{
-        flex-direction: column;
+      flex-direction: column;
     }
+    
     .left-deals .small-banner,
     .big-banner {
       height: 200px !important;
       width: 100%;
       flex: unset;
-  }
+    }
     .title-2{
         font-size: 1.5rem;
         margin-bottom: 0px;
@@ -602,14 +633,6 @@ body{
     .join-form button {
       padding: 18px 10px;
       width:103px ;
-    }
-
-    main .plants-card-container,
-    .our-plants-info, 
-    .flower-lover-container,
-    .deals-section,
-    .deals-container{
-      margin: 15px;
     }
 
     /* footer section responsive */
@@ -636,6 +659,6 @@ body{
       margin-top: 30px;
     }
 
-  }
+}
 
 
