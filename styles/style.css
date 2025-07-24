@@ -232,31 +232,37 @@ body{
 
 /* Latest deals plans section */
 .bloom {
+  background-color: rgba(0,0,0,0.5);
   background-image: url('../assets/deal-bloom.png');
- 
+  background-blend-mode: darken;
+
 }
 
 .ana {
+  background-color: rgba(0,0,0,0.5);
   background-image: url('../assets/deal-ana.png');
+    background-blend-mode: darken;
 }
 
 .zabo {
+  background-color: rgba(0,0,0,0.5);
   background-image: url('../assets/deal-zabo.png');
+    background-blend-mode: darken;
 }
 
-.banner-container {
+.deals-container {
   display: flex;
   gap: 20px;
 }
 
-.left-banners {
+.left-deals {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 1;
 }
 
-.banner {
+.deals-banner {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
@@ -366,6 +372,56 @@ body{
   width: 186px;
 
 }
+
+
+/* Footer Section Styles */
+.footer-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.left-content img{
+  width: 135px;
+  height: 82px;
+}
+
+.footer-description{
+   font-size: 1.37rem;
+   font-weight: 400;
+   color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-menu{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.footer-menu li{
+  list-style: none;
+}
+
+.footer-menu li a{
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+}
+
+.right-content{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+
+}
+
+.right-content img{
+  width: 36px;
+  height: 36px;
+}
+
+
+
 
 /* responsive layout style */
 @media screen and (max-width: 576px) {
@@ -510,17 +566,17 @@ body{
         font-size: 0.87rem;
     }
 
-    .banner-container{
+    .deals-container{
         flex-direction: column !important;
     }
-    .left-banners{
+    .left-deals{
         flex-direction: column ;
         width: 100%;
     }
     .big-banner{
         flex-direction: column;
     }
-    .left-banners .small-banner,
+    .left-deals .small-banner,
     .big-banner {
       height: 200px !important;
       width: 100%;
@@ -548,9 +604,11 @@ body{
       width:103px ;
     }
 
-    main .flower-lover-container,
+    main .plants-card-container,
+    .our-plants-info, 
+    .flower-lover-container,
     .deals-section,
-    .banner-container{
+    .deals-container{
       margin: 15px;
     }
   }
