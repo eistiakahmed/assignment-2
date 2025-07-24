@@ -206,6 +206,112 @@ header, main{
     margin-bottom: 20px;
 }
 
+/* Latest  Deals section style */
+.deals-section{
+    margin-top: 125px;
+}
+
+.deals-title{
+    font-size: 3.12rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.deals-description{
+    font-size: 1.37rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Latest deals plans section */
+.bloom {
+  background-image: url('../assets/deal-bloom.png');
+ 
+}
+
+.ana {
+  background-image: url('../assets/deal-ana.png');
+}
+
+.zabo {
+  background-image: url('../assets/deal-zabo.png');
+}
+
+.banner-container {
+  display: flex;
+  gap: 20px;
+}
+
+.left-banners {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.banner {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-banner {
+  flex: 2;
+  height: 420px;
+}
+
+  .text {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+  .text-2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.title{
+    margin-bottom: 8px;
+}
+
+/* .banner .text h3,
+.banner .text-2 h3 {
+  margin: 0 0 8px;
+} */
+
+  .title-2{
+    margin-bottom: 8px;
+    
+  }
+  
+  .text a {
+  color: rgb(255, 255, 255);
+  padding: 6px 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  
+}
+ .text-2 a {
+  color: rgb(255, 255, 255);
+  padding: 6px 14px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 /* responsive layout style */
 @media screen and (max-width: 576px) {
      /* nav responsive */
@@ -320,6 +426,8 @@ header, main{
     .plants-card-container{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Flower and Plants Lover */
     .flower-lover-container{
         flex-direction: column;
         gap: 20px;
@@ -337,6 +445,42 @@ header, main{
     }
     .flower-lover-description{
         font-size: 0.87rem;
+    }
+
+    /* Latest  Deals section responsive */
+    .deals-title{
+        font-size: 1.5rem;
+    }
+    .deals-description{
+        font-size: 0.87rem;
+    }
+    br{
+        display: none;
+    }
+
+    .banner-container{
+        flex-direction: column;
+    }
+    .left-banners{
+        flex-direction: column;
+        width: 100%;
+    }
+    .big-banner{
+        flex-direction: column;
+    }
+    .left-banners .small-banner,
+    .big-banner {
+      height: 200px !important;
+      width: 100%;
+      flex: unset;
+  }
+    .title-2{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .title-2-btn{
+        font-size: 1rem !important;
+        font-weight: 600;
     }
 }
 
