@@ -24,6 +24,10 @@ header, main{
     margin: 30px auto;
 }
 
+body{
+  margin: 0px;
+}
+
 /* Navigation sections style  */
 
 .navigation-container{
@@ -288,11 +292,6 @@ header, main{
     margin-bottom: 8px;
 }
 
-/* .banner .text h3,
-.banner .text-2 h3 {
-  margin: 0 0 8px;
-} */
-
   .title-2{
     margin-bottom: 8px;
     
@@ -310,6 +309,59 @@ header, main{
   padding: 6px 14px;
   font-size: 22px;
   font-weight: 600;
+}
+
+.join-section {
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  width: 100%;
+  height: 400px;
+}
+.join-content{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.join-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* .join-content h2 span {
+  color: orange;
+} */
+
+.join-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.join-form input[type="email"] {
+  padding: 10px 120px;
+  border: none;
+  width: 250px;
+  max-width: 100%;
+}
+
+.join-form button {
+  padding: 10px 25px;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
 }
 
 /* responsive layout style */
@@ -335,7 +387,7 @@ header, main{
 
     /* banner responsive */
     .banner-container{
-        flex-direction: column-reverse;
+        flex-direction: column-reverse !important;
         
     }
     .banner-info{
@@ -462,7 +514,7 @@ header, main{
         flex-direction: column;
     }
     .left-banners{
-        flex-direction: column;
+        flex-direction: column !;
         width: 100%;
     }
     .big-banner{
@@ -482,5 +534,7 @@ header, main{
         font-size: 1rem !important;
         font-weight: 600;
     }
-}
+
+  }
+
 
