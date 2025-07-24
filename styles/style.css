@@ -330,14 +330,11 @@ body{
 }
 
 .join-content h2 {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-/* .join-content h2 span {
-  color: orange;
-} */
 
 .join-form {
   display: flex;
@@ -348,19 +345,25 @@ body{
 }
 
 .join-form input[type="email"] {
-  padding: 10px 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
   border: none;
-  width: 250px;
+  width: 644px;
   max-width: 100%;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .join-form button {
-  padding: 10px 25px;
+  padding: 18px 40px;
   border: none;
-  background-color: orange;
+  background-color: rgba(233, 90, 8, 1);
   color: white;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 186px;
 
 }
 
@@ -535,6 +538,18 @@ body{
         font-weight: 600;
     }
 
+    .join-content h2 {
+     font-size: 20px;
+    }
+    .join-form input[type="email"] {
+      padding: 20px 10px;
+      width:250px;
+    }
+
+    .join-form button {
+      padding: 18px 10px;
+      width:103px ;
+    }
   }
 
 
