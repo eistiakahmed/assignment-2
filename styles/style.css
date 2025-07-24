@@ -611,6 +611,31 @@ body{
     .deals-container{
       margin: 15px;
     }
+
+    /* footer section responsive */
+    .footer-container{
+      flex-direction: column;
+      margin-left: 20px;
+      margin-right: 14px;
+    }
+    .left-content img{
+      width: 180px;
+      height: 109px;
+    }
+    .footer-description{
+      font-size: 1rem;
+    }
+
+    .footer-menu{
+      grid-template-columns: repeat(1,1fr);
+      padding-left: 0px;
+      margin-bottom: 10px;
+    }
+
+    .right-content {
+      margin-top: 30px;
+    }
+
   }
 
 
