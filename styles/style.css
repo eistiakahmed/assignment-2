@@ -310,7 +310,7 @@ body{
   font-size: 22px;
   font-weight: 600;
 }
-
+/* Join the colorful bunch section style */
 .join-section {
   background-image: url(../assets/news-letter-bg.png);
   background-size: cover;
@@ -509,15 +509,12 @@ body{
     .deals-description{
         font-size: 0.87rem;
     }
-    br{
-        display: none;
-    }
 
     .banner-container{
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .left-banners{
-        flex-direction: column !;
+        flex-direction: column ;
         width: 100%;
     }
     .big-banner{
@@ -537,7 +534,7 @@ body{
         font-size: 1rem !important;
         font-weight: 600;
     }
-
+    /* Join the colorful bunch section */
     .join-content h2 {
      font-size: 20px;
     }
@@ -549,6 +546,12 @@ body{
     .join-form button {
       padding: 18px 10px;
       width:103px ;
+    }
+
+    main .flower-lover-container,
+    .deals-section,
+    .banner-container{
+      margin: 15px;
     }
   }
 
