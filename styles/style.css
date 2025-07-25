@@ -572,6 +572,7 @@ body{
     .flower-lover-container{
       flex-direction: column;
       gap: 20px;
+      margin-top: 40px;
     }
 
     .badge{
