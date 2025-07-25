@@ -471,8 +471,8 @@ body{
 
     .navigation-container{
       align-items: center;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-left: 18px;
+      padding-right: 18px;
     }
 
     /* banner responsive */
@@ -598,6 +598,7 @@ body{
 
     .deals-container{
       flex-direction: column !important;
+      margin-top: 50px;
     }
     .left-deals{
       flex-direction: column ;
@@ -622,12 +623,15 @@ body{
         font-weight: 600;
     }
     /* Join the colorful bunch section */
+    .join-section{
+      margin-top: 40px;
+    }
     .join-content h2 {
      font-size: 20px;
     }
     .join-form input[type="email"] {
       padding: 20px 10px;
-      width:250px;
+      width: 218px;
     }
 
     .join-form button {
